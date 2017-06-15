@@ -1,14 +1,24 @@
 <template>
-	<section class="dashboard">	
-		<img class="logo--top" src="./assets/octy.png">		
-	</section>
+	<header>
+		<section class="logo">
+			<img class="logo--top" src="./assets/octy.png">		
+		</section>
+	</header>
+
+	<header>
+		
+	</header>
+
+	<footer>
+
+	</footer>	
 </template>
 
 <style>
 	p {
 		color: red;
 	}
-	
+
 	.logo--top {
 		
 	}
