@@ -1,1 +1,1 @@
-web: npm run-script start_server
+web: npm run-script start_server && node server.js
