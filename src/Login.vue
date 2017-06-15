@@ -1,6 +1,6 @@
 <template>
 	<section id="container">
-		<img class="logo--main" src="./assets/logo.svg">
+		<img class="logo--main" src="./assets/octy.png">
 		<section class="login">
 		    <fieldset>
 		        <input v-model="username" placeholder="Email">
@@ -22,8 +22,9 @@
         },
         methods: {
             test: function () {
-                console.log(this)
-                this.$router.push('test');
+                if (this.username === 'test' && this.password === 'test') {
+                  this.$router.push('dashboard');
+                }      
             }
         } 
     }

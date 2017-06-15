@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import App from './App.vue'
 import Login from './Login.vue'
+import Dashboard from './Dashboard.vue'
 
 Vue.use(VueRouter)
 
@@ -9,15 +9,16 @@ var router = new VueRouter(
 	{		
 		routes: [
 			{
-				path: '/test',			
-				component: {
-						template: '<div>tset2</div>'
+				path: '/login',			
+				alias: '/',
+				components: {
+					login: Login
 				}
 			},
 			{	
-				path: '/dashboard',
-				component: {
-					template: `<div>test</div>`
+				path: '/',
+				components: {
+					dashboard: Dashboard
 				}
 			}
 		]
@@ -25,7 +26,7 @@ var router = new VueRouter(
 )
 
 new Vue({
-  el: '#app',
-  router,
-  template: '<div>test<router-link to="/test">to</router-link><router-view></router-view></div>'
+	el: '#app',
+	router,
+	render: (c) => c(Dashboard)
 })
