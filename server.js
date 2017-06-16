@@ -8,4 +8,4 @@ app.get('/', function (req, res) {
 	res.sendFile(`${__dirname}/index.html`)
 })
 
-app.listen(process.env.PORT || 8085, function () { console.log('Server has been started!') })
+app.listen(process.env.PORT || 5051, function () { console.log('Server has been started!') })
