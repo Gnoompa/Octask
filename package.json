@@ -9,6 +9,9 @@
     "build": "cross-env NODE_ENV=production webpack",
     "start_server": "npm run-script build"
   },
+  "engines": {
+    "node": "7.5.0"
+  },
   "dependencies": {
     "express": "^4.15.3",
     "uglify-es": "github:mishoo/UglifyJS2#harmony",
